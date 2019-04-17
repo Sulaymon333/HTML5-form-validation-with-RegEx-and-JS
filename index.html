@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>HTML5 form validation with RegEx and JS</title>
+  </head>
+  <body>
+    <h1>HTML5 form validation with RegEx and JS</h1>
+    <form action="" id="form">
+      <label for="firstname">First name</label>
+      <input type="text" id="firstname" placeholder="firstname" />
+      <p>Your name must be at between 2-12 characters</p>
+
+      <label for="lastname">Last name</label>
+      <input type="text" id="lastname" placeholder="lastname" />
+      <p>Your name must be at between 2-12 characters</p>
+
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="username" />
+      <p>Your username must be minimum of 2 characters</p>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="email" />
+      <p>Your email format can be example@email.co.uk / other acceptable email formats</p>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="password" />
+      <p>Your password must be minimum of 6 characters. special characters allowed</p>
+
+      <label for="telephone">Telephone</label>
+      <input type="telephone" id="telephone" placeholder="telephone" />
+      <p>Your telephone number must be 11 characters with 123-456-7890 format or separated with space</p>
+
+      <label for="bio">Bio</label>
+      <input type="text" id="bio" placeholder="bio" />
+      <p>Your bio must be minimum of 3 characters</p>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script src="./validate.js"></script>
+  </body>
+</html>
