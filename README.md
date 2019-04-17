@@ -6,7 +6,7 @@ This app is developed as part of my 6 months coding bootcamp at Integrify Helsin
 
 You can see the live demo of the App here:
 
-[(https://sulaymon333.github.io/Account-balance-app/)](https://sulaymon333.github.io/Account-balance-app/)
+[(https://sulaymon333.github.io/HTML5-form-validation-with-RegEx-and-JS/)](https://sulaymon333.github.io/HTML5-form-validation-with-RegEx-and-JS/)
 
 # <p align="center"><img src="assets/demo.PNG"/></p>
 
