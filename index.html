@@ -12,23 +12,23 @@
     <form action="" id="form">
       <label for="firstname">First name</label>
       <input type="text" id="firstname" placeholder="firstname" />
-      <p>Your name must be at between 2-12 characters</p>
+      <p>Your name must be 2-12 letters</p>
 
       <label for="lastname">Last name</label>
       <input type="text" id="lastname" placeholder="lastname" />
-      <p>Your name must be at between 2-12 characters</p>
+      <p>Your name must be 2-12 letters</p>
 
       <label for="username">Username</label>
       <input type="text" id="username" placeholder="username" />
-      <p>Your username must be minimum of 2 characters</p>
+      <p>Your username can be alphanumeric (_ and - are allowed) of 2-12 characters</p>
 
       <label for="email">Email</label>
       <input type="email" id="email" placeholder="email" />
-      <p>Your email format can be example@email.co.uk / other acceptable email formats</p>
+      <p>Your email must be a valid email, e.g. example@email.co.uk</p>
 
       <label for="password">Password</label>
       <input type="password" id="password" placeholder="password" />
-      <p>Your password must be minimum of 6 characters. special characters allowed</p>
+      <p>Your password must be alphanumeric (@,_ and - are allowed) of 6-32 characters</p>
 
       <label for="telephone">Telephone</label>
       <input type="telephone" id="telephone" placeholder="telephone" />
@@ -36,11 +36,12 @@
 
       <label for="bio">Bio</label>
       <input type="text" id="bio" placeholder="bio" />
-      <p>Your bio must be minimum of 3 characters</p>
+      <p>Your bio must be minimum of 3-60 characters</p>
 
-      <button type="submit">Submit</button>
+      <button type="submit" disabled>Submit</button>
     </form>
 
+    <script src="./pattern.js"></script>
     <script src="./validate.js"></script>
   </body>
 </html>
