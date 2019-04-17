@@ -4,20 +4,26 @@ const inputFields = document.querySelectorAll('input');
 const form = document.querySelector('#form');
 
 /*=== Event listeners ===*/
+const arr = [];
 inputFields.forEach(input => {
   input.addEventListener('input', e => {
-    // console.log(input.id);
-    if (patterns[input.id].pattern.test(e.target.value)) {
-      //console.log(true);
+    if (fieldsData[input.id].pattern.test(e.target.value)) {
       input.className = 'valid';
-      console.log(patterns[input.id].status);
-      patterns[input.id].status = true;
+      // fieldsData[input.id].status = true;
+      arr.push(input.id);
     } else {
       input.className = 'invalid';
-      console.log(patterns[input.id].status);
-      patterns[input.id].status = false;
+      // fieldsData[input.id].status = false;
+    }
+    let uniqueArr = new Set(arr);
+    console.log(Array.from(uniqueArr));
+
+    if (Array.from(uniqueArr).length === inputFields.length) {
+      form['submit-button'].disabled = false;
+      form['submit-button'].style.backgroundColor = 'green';
     }
     e.preventDefault();
-    // form.reset();
   });
 });
+
+form.addEventListener('submit', e => form.reset());
