@@ -37,13 +37,13 @@ button {
 
 button {
   background: transparent;
-  border: 0;
-  /* color:  #6d6d6d */
+  border: none;
 }
 
-button:focus {
-  border: 0;
-  outline: none;
+button:focus,
+button:active {
+  border: none;
+  outline: 0;
 }
 
 /* styles to validate input fields */
