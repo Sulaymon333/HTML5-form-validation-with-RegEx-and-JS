@@ -28,7 +28,8 @@ inputFields.forEach(input => {
 
     if (arr.length === inputFields.length) {
       form['submit-button'].disabled = false;
-      form['submit-button'].style.backgroundColor = 'green';
+      form['submit-button'].style.color = 'white';
+      form['submit-button'].style.backgroundColor = '#18e618';
     }
   });
 });
@@ -37,6 +38,7 @@ form.addEventListener('submit', e => {
   form.reset();
   arr = [];
   form['submit-button'].disabled = true;
+  form['submit-button'].style.color = '#6d6d6d';
   form['submit-button'].style.backgroundColor = 'transparent';
   inputFields.forEach(input => input.classList.remove('valid'));
   e.preventDefault();

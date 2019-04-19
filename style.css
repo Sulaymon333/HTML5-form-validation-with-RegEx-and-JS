@@ -38,6 +38,7 @@ button {
 button {
   background: transparent;
   border: 0;
+  /* color:  #6d6d6d */
 }
 
 button:focus {
