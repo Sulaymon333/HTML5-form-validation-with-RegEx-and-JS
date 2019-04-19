@@ -8,7 +8,7 @@ You can see the live demo of the App here:
 
 [(https://sulaymon333.github.io/HTML5-form-validation-with-RegEx-and-JS/)](https://sulaymon333.github.io/HTML5-form-validation-with-RegEx-and-JS/)
 
-# <p align="center"><img src="assets/demo.PNG"/></p>
+# <p align="center"><img src="assets/demo.png"/></p>
 
 ## Author
 
