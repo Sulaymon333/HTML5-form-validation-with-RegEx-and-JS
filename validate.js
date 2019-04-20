@@ -4,20 +4,20 @@ const form = document.querySelector('#form');
 
 /*=== input patterns ===*/
 const patterns = {
-  firstname: { pattern: /^[a-zA-Z]{2,12}$/ },
-  lastname: { pattern: /^[a-zA-Z]{2,12}$/ },
-  username: { pattern: /^[\w\-]{2,12}$/ },
-  email: { pattern: /^[\w\.]{6,12}\@[a-z]{2,6}\.[a-z]{2,6}(\.[a-z]{2,6})?$/ },
-  password: { pattern: /^[\w-@]{6,32}$/ },
-  telephone: { pattern: /^[\d]{3}(\ |\-)[\d]{3}(\ |\-)[\d]{4}$/ },
-  bio: { pattern: /^[\w-\ \.]{3,60}$/ }
+  firstname: /^[a-zA-Z]{2,12}$/, 
+  lastname: /^[a-zA-Z]{2,12}$/, 
+  username: /^[\w\-]{2,12}$/, 
+  email: /^[\w\.]{6,12}\@[a-z]{2,6}\.[a-z]{2,6}(\.[a-z]{2,6})?$/, 
+  password: /^[\w-@]{6,32}$/, 
+  telephone: /^[\d]{3}(\ |\-)[\d]{3}(\ |\-)[\d]{4}$/, 
+  bio: /^[\w-\ \.]{3,60}$/ 
 };
 
 /*=== Event listeners ===*/
 let arr = [];
 inputFields.forEach(input => {
   input.addEventListener('input', e => {
-    if (patterns[input.id].pattern.test(e.target.value)) {
+    if (patterns[input.id].test(e.target.value)) {
       input.className = 'valid';
       arr.push(input.id);
     } else {
